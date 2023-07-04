@@ -25,7 +25,7 @@ jobs:
       - uses: actions/checkout@v3
       - name: Publish
         run: dotnet publish ${{ env.SOLUTION_NAME }} --configuration ${{ env.CONFIGURATION }} --output ${{ env.OUTPUT }}
-      - name: Change base-tag in index.html from / to PasswordGenerator_CICD_Test
+      - name: Change base-tag in index.html from / to LexerGenerator
         run: sed -i 's/<base href="\/" \/>/<base href="\/${{ env.REPOSITORY_NAME }}\/" \/>/g' ${{ env.OUTPUT }}/wwwroot/index.html
 
       - name: copy index.html to 404.html
