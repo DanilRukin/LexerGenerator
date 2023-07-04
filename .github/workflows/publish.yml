@@ -22,7 +22,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Call build_and_test workflow
-        uses: ./.github/workflows/build_and_test
+        uses: LexerGenerator/LexerGenerator/.github/workflows/build_and_test
       - name: Publish
         run: dotnet publish ${{ env.SOLUTION_NAME }} --configuration ${{ env.CONFIGURATION }} --output ${{ env.OUTPUT }}
       - name: Change base-tag in index.html from / to PasswordGenerator_CICD_Test
