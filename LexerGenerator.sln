@@ -3,12 +3,29 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LexerGenerator.Blazor", "src\LexerGenerator.Blazor\LexerGenerator.Blazor.csproj", "{D8E5ED7C-9813-4223-BA63-B39B47327253}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "tests\UnitTests\UnitTests.csproj", "{D6754BA1-328F-487B-8B31-C1A229811A24}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D8E5ED7C-9813-4223-BA63-B39B47327253}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8E5ED7C-9813-4223-BA63-B39B47327253}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8E5ED7C-9813-4223-BA63-B39B47327253}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8E5ED7C-9813-4223-BA63-B39B47327253}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6754BA1-328F-487B-8B31-C1A229811A24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6754BA1-328F-487B-8B31-C1A229811A24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6754BA1-328F-487B-8B31-C1A229811A24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6754BA1-328F-487B-8B31-C1A229811A24}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9F478B30-D787-4B05-B902-53E31BEFD9AF}
 	EndGlobalSection
 EndGlobal
